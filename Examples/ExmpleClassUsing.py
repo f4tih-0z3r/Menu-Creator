@@ -77,4 +77,5 @@ MyObject=MyClass("Asdxd")
 
 AllList=[MyObject]
 
-Menu(AllList)
+a=Menu(AllList)
+print(a)
