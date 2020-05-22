@@ -22,8 +22,13 @@ def Menu(List):
 
         OptionCounter=1
         for Val in ListToShow[GroupCounterToShow]:
-            print(str(OptionCounter)+")"+str(Val))
-            OptionCounter+=1
+            if str(type(Val))[8:16]=="__main__":
+                print(str(OptionCounter)+")"+str(Val.Name))
+                OptionCounter+=1
+
+            else:
+                print(str(OptionCounter)+")"+str(Val))
+                OptionCounter+=1
 
         IsPreShow=1
         IsNextShow=1
