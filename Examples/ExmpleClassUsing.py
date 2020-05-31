@@ -11,7 +11,7 @@ def Menu(List):
     for Val in List:
         ListToShow[GroupCounter].append(Val)
 
-        if len(str(len(ListToShow[GroupCounter])/6)) == 3:
+        if len(str(len(ListToShow[GroupCounter])/6))==3:
              if str(len(ListToShow[GroupCounter])/6)[-1]=="0":
                  GroupCounter+=1
                  ListToShow.append([])
@@ -22,7 +22,7 @@ def Menu(List):
 
         OptionCounter=1
         for Val in ListToShow[GroupCounterToShow]:
-            if str(type(Val))[8:16]=="__main__":
+            if str(Val)[0]=="<" and str(Val)[-1]==">":
                 print(str(OptionCounter)+")"+str(Val.Name))
                 OptionCounter+=1
 
